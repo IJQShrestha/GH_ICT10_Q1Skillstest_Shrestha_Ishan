@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Mandala Delivery</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Mandala Order Form</h1>
+
+    <div id="div1">
+        <h2>Customer Info</h2>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <input type="text" id="address" placeholder="Enter your address"><br><br>
+        <input type="text" id="phone" placeholder="Enter your phone number"><br><br>
+    </div>
+
+    <div id="div2">
+        <h2>Menu</h2>
+        <select id="menu">
+            <option value="Butter Chicken - 320₱">Butter Chicken - 320₱</option>
+            <option value="Beef Biryani - 330₱">Beef Biryani - 330₱</option>
+            <option value="Chicken Tandoori - 230₱">Chicken Tandoori - 230₱</option>
+        </select><br><br>
+        <input type="button" py-click="generate" value="Submit Order">
+    </div>
+
+     <div id="div3">
+        <h2>Order Summary</h2>
+    </div>
+
+    <div id="output"></div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
